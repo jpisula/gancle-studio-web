@@ -62,7 +62,7 @@ body {
   font-family: 'Jost', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: $grayBgColor;
+  background-color: $grayColor;
   // overflow-x: hidden;
 }
 
@@ -83,7 +83,7 @@ h1,
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
-  color: $textColor;
+  color: $blackTextColor;
 }
 
 h2,
@@ -91,7 +91,7 @@ h2,
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
-  color: $textColor;
+  color: $blackTextColor;
 }
 
 h3,
@@ -99,7 +99,7 @@ h3,
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
-  color: $textColor;
+  color: $blackTextColor;
 }
 
 @include media('<=mobile') {
@@ -107,19 +107,19 @@ h3,
   .p {
     font-size: 18px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 
   p.smaller {
     font-size: 16px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 
   .p-smaller {
     font-size: 16px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 }
 
@@ -128,18 +128,18 @@ h3,
   .p {
     font-size: 20px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 
   p.smaller {
     font-size: 18px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 
   .p-smaller {
     font-size: 18px;
     font-weight: 500;
-    color: $textColor;
+    color: $blackTextColor;
   }
 }

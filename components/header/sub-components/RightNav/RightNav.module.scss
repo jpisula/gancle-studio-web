@@ -1,3 +1,5 @@
+@import 'styles/variables.scss';
+
 .ul {
   list-style: none;
   display: flex;
@@ -11,7 +13,7 @@
   a {
     text-decoration: none;
     text-transform: none;
-    color: #000;
+    color: $whiteTextColor;
     cursor: pointer;
 
     &:hover {
@@ -21,23 +23,23 @@
 
   li {
     padding: 18px 10px;
+    color: $whiteTextColor;
   }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #fdfdfdfa;
+    background-color: $darkBlueColor;
     position: fixed;
     top: 80px;
     right: 0;
     height: 100%;
     width: 100%;
-    // padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     z-index: 9;
     justify-content: normal;
 
     li {
-      color: #000;
+      color: $whiteTextColor;
       margin-right: 34px;
 
       &:hover {

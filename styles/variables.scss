@@ -1,18 +1,9 @@
 @import './breakpoints.scss';
 @import 'include-media';
 
-$grayBgColor: #ebebeb;
-$blueBgColor: #006fca;
-$menuColor: #f8fff8;
-$textColor: #4c4948;
-$mainColor: #79c05f;
-$turquoiseBgColor: #f8fff8;
-
-$btnBorderWidth: 5px;
-
-@mixin flexCenter($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
-}
+$darkBlueColor: #1a0045;
+$purpleColor: #662d91;
+$grayColor: #a9aabc;
+$pinkColor: #ed1e79;
+$whiteTextColor: #e6e6e6;
+$blackTextColor: #1a1a1a;

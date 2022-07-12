@@ -1,7 +1,11 @@
+@import 'styles/variables.scss';
+
 .nav {
   height: 80px;
-  background-color: #fdfdfdfa;
-  position: relative;
+  background-color: $darkBlueColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   @media (max-width: 678px) {
     width: 100vw;
