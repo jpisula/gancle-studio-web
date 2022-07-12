@@ -9,16 +9,33 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^1.0.6",
+    "@sanity/asset-utils": "^1.2.3",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^3.3.2",
+    "classnames": "^2.3.1",
+    "include-media": "^1.4.10",
+    "install": "^0.13.0",
+    "moment": "^2.29.4",
     "next": "12.2.0",
+    "next-sanity": "^0.6.0",
+    "next-seo": "^5.4.0",
+    "next-translate": "^1.4.0",
+    "npm": "^8.11.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.53.0",
+    "styled-components": "^5.3.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@types/node": "18.0.1",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
+    "@types/styled-components": "^5.1.25",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
     "typescript": "4.7.4"
   }
 }
