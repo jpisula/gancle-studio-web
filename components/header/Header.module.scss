@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  transition: all 0.15s linear;
 
   @media (max-width: 678px) {
     width: 100vw;
@@ -24,14 +25,33 @@
 
   .logo {
     width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
     img {
       max-height: 50px;
+      transition: all 0.2s linear;
     }
   }
 }
 
 .navHeight {
   height: 100%;
+}
+
+.navbarScrolled {
+  // background-color: $grayColor;
+  border-bottom: 2px solid $pinkColor;
+  height: 60px;
+  transition: all 0.2s linear;
+
+  .logo {
+    img {
+      max-height: 40px;
+      transition: all 0.2s linear;
+    }
+  }
 }
 
 .navContent {
