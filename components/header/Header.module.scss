@@ -5,6 +5,7 @@
   background-color: $darkBlueColor;
   position: fixed;
   top: 0;
+  z-index: 999999;
   width: 100%;
   transition: all 0.15s linear;
 

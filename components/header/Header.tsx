@@ -13,7 +13,7 @@ const Header = () => {
   const [navbarScrollStyles, setNavbarScrollStyles] = useState(false);
 
   const changeNavbarStyles = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 50) {
       setNavbarScrollStyles(true);
     } else {
       setNavbarScrollStyles(false);
