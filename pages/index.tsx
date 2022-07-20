@@ -42,22 +42,30 @@ const Home: NextPage = () => {
                 )}
               </ReactVisibilitySensor>
               <p>
-                Nasza firma została utworzona przez dwójkę przyjaciół, którzy od
-                lat pasjonują się programowaniem. Łącznie posiadamy ponad 8 lat
-                zawodowego doświadczenia w tworzeniu stron internetowych. Nasi
-                programiści pracowali m.in. przy dużych systemach
-                administracyjnych czy przy rozwijaniu wiodących serwisów
-                internetowych.
+                <strong>Gancle Studio</strong> zostało utworzone przez dwójkę
+                przyjaciół, którzy od dzieciństwa pasjonują się programowaniem.
+                <br />
+                Łącznie posiadamy
+                <strong> ponad 8 lat zawodowego doświadczenia</strong> w
+                tworzeniu stron internetowych. Nasi programiści pracowali m.in.
+                przy dużych systemach administracyjnych czy przy rozwijaniu
+                wiodących serwisów internetowych.
               </p>
               <p>
                 W procesie tworzenia stron dla klientów skupiamy się głównie na
-                spełnieniu wymagań biznesowych oraz dostosowaniu projektu pod
-                profil klienta (wygląd strony, treści, doświadczenie
-                użytkowników strony). Pomagamy również w rozwoju marki naszych
-                klientów poprzez propozycje zmian na stronie, dbaniu o SEO
+                <strong> spełnieniu wymagań biznesowych</strong> oraz{' '}
+                <strong>dostosowaniu projektu pod profil klienta</strong>{' '}
+                (wygląd strony, treści, doświadczenie użytkowników strony).
+                <br />
+              </p>
+              <p>
+                Pomagamy również w{' '}
+                <strong>rozwoju marki naszych klientów</strong> poprzez audyty
+                stron, propozycje zmian, dbaniu o <strong>SEO</strong>{' '}
                 (wyświetlanie na górze w wynikach wyszukiwarek internetowych), a
-                także doradzając jakie kroki powinien podjąć klient, aby zostać
-                zauważonym w świecie internetu.
+                także <strong>doradzając klientowi</strong> jakie kroki powinien
+                podjąć, aby zostać{' '}
+                <strong>zauważonym w świecie internetu</strong>.
               </p>
               <div className={styles.blockquoteWrapper}>
                 <div className={styles.blockquote}>
@@ -97,6 +105,23 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section className={styles.realizations}>
+        <div className={styles.triangleDivider}>
+          <svg
+            data-name='Layer 1'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 1200 120'
+            preserveAspectRatio='none'
+          >
+            <path
+              d='M649.97 0L550.03 0 599.91 54.12 649.97 0z'
+              className={styles.triangleFill}
+            ></path>
+          </svg>
+        </div>
+
+        <h2>NASZE PRZYKŁADOWE REALIZACJE</h2>
       </section>
     </>
   );

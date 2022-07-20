@@ -188,6 +188,7 @@
   .aboutUs {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .aboutUsDesc {
       height: 100%;
@@ -213,6 +214,10 @@
         line-height: 1.5;
         letter-spacing: 1px;
         margin-bottom: 30px;
+
+        strong {
+          color: $pinkColor;
+        }
       }
 
       /* center the blockquote in the page */
@@ -231,7 +236,7 @@
         padding: 30px 0;
         width: 100%;
         max-width: 500px;
-        margin: 30px auto;
+        margin: 30px 0 30px 30px;
         align-self: center;
         border-top: solid 1px;
         border-bottom: solid 1px;
@@ -244,6 +249,7 @@
         font-style: italic;
         font-weight: 800;
         margin: 0;
+        letter-spacing: 1.5px;
       }
 
       /* Blockquote right double quotes */
@@ -259,10 +265,17 @@
     }
 
     .fancyLogoExpanded {
-      width: 30%;
+      min-width: 50%;
       height: auto;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
+
+      h2 {
+        font-size: 26px;
+        letter-spacing: 2px;
+        line-height: 40px;
+      }
 
       .companyName {
         color: $pinkColor;
@@ -305,5 +318,52 @@
         }
       }
     }
+  }
+}
+
+.realizations {
+  height: 500px;
+  position: relative;
+  background-color: $pinkColor;
+  padding-top: 70px;
+
+  .triangleDivider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .triangleDivider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+
+  .triangleDivider .triangleFill {
+    fill: $purpleColor;
+  }
+
+  h2 {
+    width: fit-content;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    color: $darkBlueColor;
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: -4px 2px 10px rgba(102, 45, 145, 1);
+
+    letter-spacing: 0;
+    display: block;
+    margin: 0 auto;
+
+    background: url('../assets/backgrounds/realizationsH2Bg.png') repeat-y;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
