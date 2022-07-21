@@ -322,10 +322,11 @@
 }
 
 .realizations {
-  height: 500px;
+  height: 100%;
   position: relative;
   background-color: $pinkColor;
   padding-top: 70px;
+  padding-bottom: 70px;
 
   .triangleDivider {
     position: absolute;
@@ -365,5 +366,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .slider {
+    margin-top: 70px;
   }
 }

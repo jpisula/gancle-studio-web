@@ -5,6 +5,7 @@ import wave from 'assets/svg/wave.svg';
 import styles from './index.module.scss';
 import classNames from 'classnames';
 import ReactVisibilitySensor from 'react-visibility-sensor';
+import VerticalSlider from 'components/vertical-slider/VerticalSlider';
 
 const Home: NextPage = () => {
   return (
@@ -122,6 +123,9 @@ const Home: NextPage = () => {
         </div>
 
         <h2>NASZE PRZYKŁADOWE REALIZACJE</h2>
+        <div className={classNames(styles.slider, 'container')}>
+          <VerticalSlider />
+        </div>
       </section>
     </>
   );
