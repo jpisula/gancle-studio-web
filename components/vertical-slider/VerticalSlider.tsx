@@ -1,5 +1,5 @@
 import styles from './VerticalSlider.module.scss';
-import LandingPhoto from 'assets/images/website.webp';
+import { v4 as uuidv4 } from 'uuid';
 import { FaLongArrowAltUp, FaLongArrowAltDown } from 'react-icons/fa';
 import classNames from 'classnames';
 import { useEffect, useState } from 'react';
@@ -43,7 +43,7 @@ const VerticalSlider = ({ slides }: VerticalSliderProps) => {
         style={{ transform: `translate3d(0, ${percentage}, 0)` }}
       >
         {slides.map((el) => (
-          <div className={styles.slide}>
+          <div className={styles.slide} key={uuidv4()}>
             <div className={styles.description}>{el.description}</div>
             <img src={el.imageSrc} alt={el.imageAlt} />
           </div>

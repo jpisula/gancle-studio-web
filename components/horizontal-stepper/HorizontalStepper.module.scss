@@ -8,6 +8,17 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: relative;
+}
+
+.stepsLine {
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  height: 4px;
+  width: 66%;
+  background-color: $pinkColor;
+  transition: width 0.7s;
 }
 
 .step {
@@ -15,6 +26,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 1;
 
   display: flex;
   justify-content: center;
@@ -27,7 +39,17 @@
   &:hover {
     background-color: $pinkColor;
     color: $darkBlueColor;
+    cursor: pointer;
 
     transition: all 0.3s linear;
+  }
+}
+
+.activeStep {
+  background-color: $pinkColor;
+  color: $darkBlueColor;
+
+  &:hover {
+    cursor: default;
   }
 }
