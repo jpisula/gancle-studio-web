@@ -1,4 +1,5 @@
 @import './breakpoints.scss';
+@import './backgrounds.scss';
 @import 'include-media';
 
 $darkBlueColor: #1a0045;
@@ -7,3 +8,33 @@ $grayColor: #a9aabc;
 $pinkColor: #ed1e79;
 $whiteTextColor: #e6e6e6;
 $blackTextColor: #1a1a1a;
+
+@-webkit-keyframes highlightMark {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes highlightMark {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes appearPhoto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes appearPhoto {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.6;
+  }
+}

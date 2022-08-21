@@ -1,0 +1,56 @@
+@import 'styles/variables.scss';
+
+.fancyLogoExpanded {
+  min-width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+
+  .companyName {
+    color: $pinkColor;
+    height: 36px;
+    width: fit-content;
+
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+
+    .studio {
+      letter-spacing: 3px;
+      padding-left: 20px;
+      vertical-align: super;
+      writing-mode: initial;
+      text-orientation: initial;
+    }
+  }
+
+  .nameExpandedTop {
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+
+    span {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+    }
+  }
+
+  .nameExpandedBottom {
+    width: fit-content;
+    display: flex;
+
+    span {
+      display: inline;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
+  }
+}

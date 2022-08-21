@@ -1,0 +1,123 @@
+@import 'styles/variables.scss';
+
+.contactSection {
+  .upperDivider {
+    width: 100%;
+    transform: rotate(180deg);
+    position: relative;
+    height: 300px;
+    svg {
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  height: 1000px;
+  background-color: $purpleColor;
+  background-image: url($contactBg);
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contactForm {
+  width: 40%;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.75px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+      margin: 0 0 0 auto;
+      margin-top: 10px;
+    }
+
+    .fieldGroup {
+      position: relative;
+      padding: 15px 0 0;
+      margin-top: 10px;
+      width: 100%;
+
+      textarea {
+        height: 130px;
+        margin-top: 15px;
+      }
+
+      input,
+      textarea {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid $darkBlueColor;
+        outline: 0;
+        font-size: 1.2rem;
+        color: $whiteTextColor;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+          color: transparent;
+        }
+
+        &:placeholder-shown ~ label {
+          cursor: text;
+          top: 20px;
+        }
+      }
+
+      label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: $whiteTextColor;
+      }
+
+      input:focus,
+      textarea:focus {
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 3px;
+        border-image: linear-gradient(to right, $darkBlueColor, $pinkColor);
+        border-image-slice: 1;
+        padding-top: 10px;
+
+        ~ label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1rem;
+          color: $darkBlueColor;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.contactInfo {
+  width: 50%;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0.75px;
+  }
+}
+
+.privacyPolicy {
+  color: $whiteTextColor;
+}

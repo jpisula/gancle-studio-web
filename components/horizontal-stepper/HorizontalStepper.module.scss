@@ -1,0 +1,33 @@
+@import 'styles/variables.scss';
+
+.hidden {
+  display: none;
+}
+
+.steps {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.step {
+  background-color: $darkBlueColor;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $whiteTextColor;
+  font-size: 20px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $pinkColor;
+    color: $darkBlueColor;
+
+    transition: all 0.3s linear;
+  }
+}
