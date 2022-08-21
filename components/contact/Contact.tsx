@@ -110,7 +110,7 @@ const Contact = () => {
           </form>
         </div>
         <div className={styles.contactInfo}>
-          <h2>Co się stanie z wiadomością od Ciebie?</h2>
+          <h2>Jakie są kroki po wysłaniu formularza?</h2>
           <HorizontalStepper />
         </div>
       </div>

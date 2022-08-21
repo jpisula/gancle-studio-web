@@ -6,6 +6,7 @@
     transform: rotate(180deg);
     position: relative;
     height: 300px;
+
     svg {
       width: 100%;
       position: absolute;
@@ -13,7 +14,7 @@
     }
   }
 
-  height: 1000px;
+  height: 1150px;
   background-color: $purpleColor;
   background-image: url($contactBg);
 
