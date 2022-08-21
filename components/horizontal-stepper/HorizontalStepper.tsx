@@ -40,10 +40,17 @@ const steps = [
         </p>
         <ul>
           <li>
-            <p className='smaller'>Telefonicznie: (+48) 608-462-001</p>
+            <p className='smaller'>
+              Telefonicznie: <a href='tel:+48608462001'>(+48) 608-462-001</a>
+            </p>
           </li>
           <li>
-            <p className='smaller'>Mailowo: biuro@gancle-studio.pl</p>
+            <p className='smaller'>
+              Mailowo:{' '}
+              <a href='mailto: biuro@gancle-studio.pl'>
+                biuro@gancle-studio.pl
+              </a>
+            </p>
           </li>
         </ul>
       </>

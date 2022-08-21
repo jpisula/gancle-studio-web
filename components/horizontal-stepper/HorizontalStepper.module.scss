@@ -10,6 +10,11 @@
   width: 100%;
   justify-content: space-between;
   position: relative;
+
+  @include media('<=bigger-tablet-landscape') {
+    width: 80%;
+    margin: 60px auto 40px auto;
+  }
 }
 
 .stepsLine {
@@ -56,11 +61,36 @@
 }
 
 .content {
+  p {
+    line-height: 1.5;
+  }
+
   .title {
     font-weight: 700;
     letter-spacing: 1px;
     text-decoration: underline;
     width: 100%;
     text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+
+    &:hover {
+      color: $pinkColor;
+      transition: color 0.3s linear;
+    }
+  }
+
+  ul {
+    margin: 0;
+    li {
+      p {
+        margin: 0;
+      }
+    }
   }
 }
